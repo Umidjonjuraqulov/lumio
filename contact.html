@@ -1,104 +1,98 @@
 <!DOCTYPE html>
 <html lang="uz">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" href="images/logo.png" type="image/png">
-<title>Lumio — Aloqa</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-<style>
-body {
-    background-color: #f8f9fa;
-    font-family: "Inter", sans-serif;
-}
-.header {
-    background: #0d6efd;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-.contact-card {
-    background: white;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-.info-box {
-    background: white;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-</style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Lumio EDU — Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-<div class="container">
-<a class="navbar-brand fw-bold text-primary" href="index.html">Lumio</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navMenu">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
-<li class="nav-item"><a href="courses.html" class="nav-link">Kurslar</a></li>
-<li class="nav-item"><a href="about.html" class="nav-link">Biz haqimizda</a></li>
-<li class="nav-item"><a href="contact.html" class="nav-link active fw-bold text-primary">Aloqa</a></li>
-</ul>
-</div>
-</div>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+      <span class="ico-badge" style="width:34px;height:34px;border-radius:12px;"><img src="assets/img/ChatGPT Image Jan 19, 2026, 10_18_46 AM.png" alt="Lumio EDU logo"></span>
+    </a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="index.html">Bosh sahifa</a></li>
+        <li class="nav-item"><a class="nav-link" href="courses.html">Kurslar</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Biz haqimizda</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-brand" href="contact.html">Aloqa</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<!-- Header -->
-<div class="header">
-<h1>Aloqa</h1>
-<p>Siz bilan bog‘lanishdan mamnunmiz!</p>
-</div>
+<div class="page-top-space"></div>
 
-<!-- Contact Section -->
-<section class="py-5">
-<div class="container">
-<div class="row g-4 justify-content-center">
-
-<!-- Form -->
-<div class="col-md-6">
-<div class="contact-card">
-<h4 class="fw-bold mb-3">Bizga yozing</h4>
-<!-- Formspree form -->
-<form action=""https://formspree.io/f/mrbjpdra"" method="POST">
-<input type="text" class="form-control mb-3" name="name" placeholder="Ismingiz" required />
-<input type="email" class="form-control mb-3" name="email" placeholder="Email" required />
-<input type="text" class="form-control mb-3" name="phone" placeholder="Telefon raqam" />
-<textarea class="form-control mb-3" name="message" rows="4" placeholder="Xabaringiz..." required></textarea>
-<button class="btn btn-primary w-100" type="submit">Yuborish</button>
-</form>
-</div>
-</div>
-
-<!-- Contact Info -->
-<div class="col-md-4">
-<div class="info-box">
-<h5 class="fw-bold">Aloqa ma'lumotlari</h5>
-<p class="mt-3"><strong>📍 Manzil:</strong> Samarqand, O‘zbekiston</p>
-<p><strong>📞 Telefon:</strong> +998 93 331 33 48</p>
-<p><strong>📧 Email:</strong> info@lumio.uz</p>
-<p><strong>⏰ Ish vaqti:</strong><br>Dushanba — Yakshanba, 09:00–21:00</p>
-</div>
-</div>
-
-</div>
-</div>
+<section class="section-sm">
+  <div class="container">
+    <div class="page-hero">
+      <div class="bg" style="background-image: url(assets/img/contact.webp);"></div>
+      <div class="content">
+        <div class="breadcrumbx" style="color: black;"><a href="index.html" style="color: black;">Home</a> / Contact</div>
+        <h1 class="h-title mt-2">Get in Touch with Us</h1>
+        <p class="p-lead mb-0">Savolingiz bo‘lsa yozing — demo yoki ro‘yxatdan o‘tishga yordam beramiz.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-primary text-white text-center py-3 mt-5">
-<p class="mb-0">© 2025 Lumio — Barcha huquqlar himoyalangan.</p>
-</footer>
+<section class="contact-section py-5">
+  <div class="container text-center">
+    <h2 class="section-title mb-3">Bog‘lanish</h2>
+    <p class="section-subtitle mb-4">
+      Savollaringiz bormi yoki kurslar haqida batafsil ma’lumot olishni xohlaysizmi?
+      Biz bilan bevosita Telegram orqali bog‘laning.
+    </p>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <a href="https://t.me/lumio_admin" target="_blank" class="btn btn-primary btn-lg contact-btn">
+      Telegram orqali bog‘lanish
+    </a>
+
+    <div class="social-links mt-5">
+      <p class="mb-3">Bizni ijtimoiy tarmoqlarda kuzatib boring</p>
+      <a href="https://t.me/lumioedu" target="_blank" class="social-icon">
+        <i class="bi bi-telegram"></i>
+      </a>
+      <a href="https://instagram.com/lumioedu" target="_blank" class="social-icon">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://youtube.com/@lumioedu" target="_blank" class="social-icon">
+        <i class="bi bi-youtube"></i>
+      </a>
+      <a href="https://linkedin.com/company/lumioedu" target="_blank" class="social-icon">
+        <i class="bi bi-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6">
+        <div class="fw-bold">Lumio EDU</div>
+        <div class="small mt-1">Real natijalar uchun zamonaviy ta’lim metodikasi.</div>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <a class="me-3" href="index.html">Bosh sahifa</a>
+        <a class="me-3" href="courses.html">Kurslar</a>
+        <a class="me-3" href="about.html">Biz haqimizda</a>
+        <a href="contact.html">Aloqa</a>
+        <div class="small mt-2">© 2026 Lumio EDU</div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
