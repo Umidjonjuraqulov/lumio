@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "home": "Bosh Sahifa",
+    "teachers": "O‘qituvchilar",
+    "courses": "Kurslar",
+    "contact": "Bog‘lanish"
+  },
+  "hero": {
+    "title1": "Lumio EDU ga",
+    "title2": "Xush kelibsiz",
+    "subtitle": "Yoshlikda olingan bilim\ntoshga o‘yilgan naqshdir"
+  },
+  "why": {
+    "title": "Nega Lumio EDU’ni tanlash kerak?",
+    "c1": { "t": "Onlayn o‘qish", "d": "Istalgan joydan turib onlayn darslarga qatnashing" },
+    "c2": { "t": "Sifatli ta’lim", "d": "Istalgan joydan turib onlayn darslarga qatnashing" },
+    "c3": { "t": "Qiziqarli darslar", "d": "Istalgan joydan turib onlayn darslarga qatnashing" }
+  },
+  "popular": {
+    "title": "Bizning mashhur kurslarimiz",
+    "math": "Matematika",
+    "eng": "Ingliz tili",
+    "teacher": "O‘qituvchi",
+    "duration": "Davomiyligi",
+    "goal": "Maqsad",
+    "schedule": "Haftasiga"
+  },
+  "courses": {
+    "title": "Kurslar",
+    "subtitle": "O‘zingizga mos kursni tanlang va onlayn o‘qishni boshlang.",
+    "search": "Kurs qidirish (nomi, o‘qituvchi, maqsad)...",
+    "filters": { "all": "Barchasi", "school": "Maktab", "language": "Til" },
+    "meta": {
+      "teacher": "O‘qituvchi",
+      "duration": "Davomiyligi",
+      "level": "Daraja",
+      "goal": "Maqsad",
+      "schedule": "Jadval"
+    },
+    "cta": { "apply": "Kursga yozilish", "backHome": "Bosh sahifa" },
+    "empty": { "title": "Hech narsa topilmadi", "desc": "Qidiruvni o‘zgartirib ko‘ring." },
+    "items": {
+      "math": { "title": "Matematika", "goal": "Prezident maktabiga kirish", "schedule": "Haftasiga 5 kun onlayn dars", "level": "O‘rta" },
+      "english": { "title": "Ingliz tili", "goal": "Prezident maktabiga kirish", "schedule": "Haftasiga 5 kun onlayn dars", "level": "Beginner" },
+      "prep": { "title": "Tayyorlov kursi", "goal": "Imtihonlarga tayyorlanish", "schedule": "Haftasiga 5 kun onlayn dars", "level": "Aralash" }
+    }
+  },
+  "contact": {
+    "title": "Kontaktlar",
+    "subtitle": "Savollaringiz bormi? Biz bilan bog‘laning. Tez orada javob beramiz.",
+    "infoTitle": "Aloqa ma’lumotlari",
+    "note": "Ish vaqti: Dushanba–Shanba (09:00–20:00). Yakshanba — dam olish kuni.",
+    "formTitle": "Xabar yuborish",
+  
+    "success": "Xabaringiz yuborildi! Tez orada bog‘lanamiz.",
+    "failed": "Xatolik yuz berdi, qayta urinib ko‘ring.",
+    "form": {
+      "sending": "Yuborilmoqda...",
+      "phonePlaceholder": "+998 90 123 45 67",
+      "telegramPlaceholder": "@username (ixtiyoriy)"
+    }
+  }
+}
+

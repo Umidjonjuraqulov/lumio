@@ -1,0 +1,66 @@
+{
+  "nav": {
+    "home": "Home",
+    "teachers": "Teachers",
+    "courses": "Courses",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title1": "Welcome to",
+    "title2": "Lumio EDU",
+    "subtitle": "Knowledge gained in youth\nis engraved in stone"
+  },
+  "why": {
+    "title": "Why choose Lumio EDU?",
+    "c1": {
+      "t": "Online Learning",
+      "d": "Join online classes from anywhere at your convenience"
+    },
+    "c2": {
+      "t": "Quality Education",
+      "d": "Modern teaching methods with experienced instructors"
+    },
+    "c3": {
+      "t": "Engaging Lessons",
+      "d": "Interactive and motivating lessons for effective learning"
+    }
+  },
+  "popular": {
+    "title": "Our Popular Courses",
+    "math": "Mathematics",
+    "eng": "English Language",
+    "teacher": "Instructor",
+    "duration": "Duration",
+    "goal": "Goal",
+    "schedule": "Per week"
+  },
+  "courses": {
+    "title": "Courses",
+    "subtitle": "Choose the right course and start learning online.",
+    "search": "Search courses (name, teacher, goal)...",
+    "filters": { "all": "All", "school": "School", "language": "Language" },
+    "meta": { "teacher": "Teacher", "duration": "Duration", "level": "Level", "goal": "Goal", "schedule": "Schedule" },
+    "cta": { "apply": "Apply", "backHome": "Home" },
+    "empty": { "title": "No results", "desc": "Try changing your search." },
+    "items": {
+      "math": { "title": "Mathematics", "goal": "Entrance to Presidential Schools", "schedule": "5 days/week online lessons", "level": "Intermediate" },
+      "english": { "title": "English", "goal": "Entrance to Presidential Schools", "schedule": "5 days/week online lessons", "level": "Beginner" },
+      "prep": { "title": "Prep Course", "goal": "Exam preparation", "schedule": "5 days/week online lessons", "level": "Mixed" }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Have questions? Get in touch with us. We’ll reply as soon as possible.",
+    "infoTitle": "Contact information",
+    "note": "Working hours: Monday–Saturday (09:00–20:00). Sunday is a day off.",
+    "success": "Your message has been sent! We will get back to you soon.",
+  "failed": "An error occurred, please try again.",
+  "form": {
+    "sending": "Sending...",
+    "phonePlaceholder": "+998 90 123 45 67",
+    "telegramPlaceholder": "@username (optional)"
+  }
+}
+  
+
+}
