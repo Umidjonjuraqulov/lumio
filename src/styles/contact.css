@@ -57,6 +57,7 @@
   box-shadow:
     0 10px 22px rgba(0,0,0,.06),
     0 2px 6px rgba(0,0,0,.04);
+  overflow: hidden;
 }
 
 :root[data-theme="dark"] .contact-info,
@@ -101,6 +102,9 @@
   border-top-color: rgba(255,255,255,.16);
 }
 
+*, *::before, *::after{
+  box-sizing: border-box;
+}
 /* =========================
    SOCIAL SECTION
 ========================= */

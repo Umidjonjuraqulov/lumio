@@ -1,9 +1,9 @@
 .teachers-page{
-  background: #eaf6ff;
+  background: var(--bg);
   min-height: 100%;
   color: var(--text);
 }
-:root[data-theme="dark"] .teachers-page{ background:#08101f; }
+:root[data-theme="dark"] .teachers-page{ background: #30394d; }
 
 .container{
   width: min(1400px, 100%);

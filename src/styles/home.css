@@ -1,29 +1,37 @@
+/* =========================================
+   HOME — YOUR TOKENS (LIGHT/DARK)
+   Uses: --bg, --card, --text, --muted, --accent
+========================================= */
+
+*, *::before, *::after{ box-sizing: border-box; }
+
 .home{
   padding-bottom: 40px;
+  background: var(--bg);
+  color: var(--text);
 }
 
-.container {
-  max-width: 1400px;   /* 🔥 MANA SHU SAYTNI UZAYTIRADI */
+.container{
+  max-width: 1400px;
   margin: 0 auto;
   padding-left: 24px;
   padding-right: 24px;
 }
 
+/* ---------- HERO ---------- */
 .hero{
   position: relative;
   padding: 30px 0 20px;
   overflow: visible;
 }
 
-/* ichki konteyner */
 .hero-inner{
   position: relative;
-  min-height: 520px;   /* hero balandligi */
+  min-height: 520px;
   display: grid;
   place-items: center;
 }
 
-/* doska markazda */
 .hero-board{
   position: relative;
   width: min(980px, 100%);
@@ -39,29 +47,26 @@
   filter: drop-shadow(0 14px 22px rgba(0,0,0,.14));
 }
 
-/* personajlar: absolute qilib chetga yopishtiramiz */
 .hero-char{
   position: absolute;
-  bottom: 0;           /* pastdan turadi */
-  width: 600px;        /* kattalik */
+  bottom: 0;
+  width: 600px;
   height: auto;
   z-index: 3;
   filter: drop-shadow(0 16px 26px rgba(0,0,0,.18));
 }
 
-/* chap tomonda sayt boshlangan joyga yaqin */
 .hero-char.left{
-  left: 0;             /* container ichida chap chet */
-  transform: translateX(-60px); /* 🔥 container tashqarisiga biroz chiqadi */
+  left: 0;
+  transform: translateX(-60px);
 }
 
-/* o‘ng tomonda sayt tugagan joyga yaqin */
 .hero-char.right{
   right: 0;
   transform: translateX(60px);
 }
 
-.board-text {
+.board-text{
   position: absolute;
   inset: 0;
   display: grid;
@@ -70,146 +75,166 @@
   padding: 18px;
 }
 
-.board-text h1 {
+.board-text h1{
   margin: 0;
-  font-size: 48px;      /* 38 -> 48 */
+  font-size: 48px;
   line-height: 1.05;
   letter-spacing: .2px;
+  color: var(--text);
 }
 
-.board-text p {
+.board-text p{
   margin-top: 12px;
   white-space: pre-line;
   font-weight: 600;
-  font-size: 16px;      /* aniqroq o‘qilsin */
-  color: rgba(0,0,0,.72);
-}
-:root[data-theme="dark"] .board-text p { color: rgba(255,255,255,.86); }
-
-.why {
-  padding: 10px 0 6px;
+  font-size: 16px;
+  color: var(--muted);
 }
 
-.why-grid {
+/* ---------- WHY ---------- */
+.why{ padding: 10px 0 6px; }
+
+.why h1{
+  text-align: center;
+  font-size: 56px;
+  color: var(--text);
+  margin: 0 0 14px;
+}
+
+.why-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
-.why-card {
-  background: linear-gradient(180deg, rgba(185,240,240,1) 0%, rgba(200,244,244,1) 100%);
+.why-card{
+  /* accent’ni yumshatib gradient qilamiz */
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--accent) 22%, var(--card)) 0%,
+    color-mix(in srgb, var(--accent) 12%, var(--card)) 100%
+  );
   border-radius: 50px;
-  padding: 18px 16px;
+  padding: 20px 16px 18px;
   text-align: center;
+
+  border: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
   box-shadow: 0 10px 18px rgba(0,0,0,.06);
-  border: 1px solid rgba(0,0,0,.05);
   transition: transform .15s ease, box-shadow .15s ease;
-  min-height: 420px;     /* 🔥 rasm + matnga joy */
-  padding-top: 20px;
-  text-align: center;
+  min-height: 420px;
 }
 
+:root[data-theme="dark"] .why-card{
+  box-shadow: 0 14px 30px rgba(0,0,0,.35);
+  border-color: color-mix(in srgb, var(--text) 12%, transparent);
+}
 
-.why-card:hover {
+.why-card:hover{
   transform: translateY(-3px);
   box-shadow: 0 14px 24px rgba(0,0,0,.10);
 }
-.why h1 {
-  text-align: center;
-  font-size: 56px;
+
+:root[data-theme="dark"] .why-card:hover{
+  box-shadow: 0 18px 38px rgba(0,0,0,.45);
 }
+
 .why-icon{
   width: 300px;
   margin: 0 auto 12px;
 }
-
 .why-icon img{
   width: 300px;
   height: auto;
 }
 
-.popular { padding: 14px 0 28px; }
+/* ---------- POPULAR / COURSES ---------- */
+.popular{ padding: 14px 0 28px; }
+
 .popular h1{
-    text-align: center;
-    font-size: 56px;
+  text-align: center;
+  font-size: 56px;
+  color: var(--text);
+  margin: 0 0 14px;
 }
-.courses {
+
+.courses{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
   margin-top: 12px;
 }
 
-.course-card {
-  background: rgba(255,255,255,.78);
+.course-card{
+  background: color-mix(in srgb, var(--card) 88%, transparent);
   border-radius: 50px;
   padding: 14px;
-  border: 1px solid rgba(0,0,0,.06);
+  border: 1px solid color-mix(in srgb, var(--text) 10%, transparent);
   box-shadow: 0 10px 18px rgba(0,0,0,.05);
+  color: var(--text);
 }
 
-:root[data-theme="dark"] .course-card {
-  background: rgba(255,255,255,.06);
-  border-color: rgba(255,255,255,.10);
+:root[data-theme="dark"] .course-card{
+  box-shadow: 0 14px 30px rgba(0,0,0,.35);
+  border-color: color-mix(in srgb, var(--text) 12%, transparent);
 }
 
-.course-img {
-  background: #c8f4f4;
+.course-img{
+  background: color-mix(in srgb, var(--accent) 18%, var(--card));
   border-radius: 50px;
   padding: 18px;
   display: grid;
   place-items: center;
 }
 
-.course-img img { width: 400px; height: auto; } /* 120 -> 150 */
+.course-img img{ width: 400px; height: auto; }
 
-.course-card h3 {
+.course-card h3{
   text-align: center;
   margin: 14px 0 10px;
   font-size: 32px;
   font-weight: 800;
-  color: #0b1b2a;
+  color: var(--text);
 }
-.course-card ul {
-  list-style: none !important; /* 🔥 eski nuqtani majburan o‘chiradi */
+
+.course-card ul{
+  list-style: none !important;
   padding: 0;
   margin: 8px 0 0;
 }
-.course-card li {
+
+.course-card li{
   position: relative;
-  padding-left: 30px;   /* ikon uchun joy */
+  padding-left: 34px;
   line-height: 1.6;
   display: flex;
-  align-items: center;  /* 🔥 text vertikal markaz */
-  text-align: 50px;
+  align-items: center;
   font-size: 18px;
+  color: var(--text);
 }
 
-.course-card li b{
-  font-size: 18px;
-}
-/* Ko‘k dumaloq + check */
-.course-card li::before {
+.course-card li b{ font-size: 18px; }
+
+.course-card li::before{
   content: "✓";
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%); /* 🔥 mutlaq markaz */
+  transform: translateY(-50%);
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: #1e88e5;
-  color: #ffffff;
+  background: var(--accent);
+  color: #fff;
   font-size: 22px;
   font-weight: 900;
   display: flex;
   align-items: center;
-  justify-content: center; /* 🔥 ✓ markazda */
+  justify-content: center;
 }
 
-:root[data-theme="dark"] .course-card h3 {
-  color: #eaf2ff;
-}
+
+
+/* Button */
 .course-btn{
   display: block;
   margin-top: 14px;
@@ -219,40 +244,74 @@
   text-decoration: none;
   color: #fff;
   border-radius: 14px;
-  background: linear-gradient(180deg, #1e88e5 0%, #1565c0 100%);
-  box-shadow: 0 12px 22px rgba(30,136,229,.25);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--accent) 100%, #000) 0%,
+    color-mix(in srgb, var(--accent) 78%, #000) 100%
+  );
+  box-shadow: 0 12px 22px color-mix(in srgb, var(--accent) 28%, transparent);
   transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+
+:root[data-theme="dark"] .course-btn{
+  color: #06101d;
+  box-shadow: 0 14px 26px rgba(0,0,0,.35);
 }
 
 .course-btn:hover{
   transform: translateY(-2px);
-  box-shadow: 0 16px 28px rgba(30,136,229,.34);
+  box-shadow: 0 16px 28px color-mix(in srgb, var(--accent) 34%, transparent);
   filter: brightness(1.03);
 }
 
-.course-btn:active{
-  transform: translateY(0px);
+.course-btn:active{ transform: translateY(0px); }
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 980px){
+  .hero-inner{ min-height: 440px; }
+
+  .hero-char{ width: 360px; }
+  .hero-char.left{ transform: translateX(-30px); }
+  .hero-char.right{ transform: translateX(30px); }
+
+  .board-text h1{ font-size: 34px; }
+  .board-text p{ font-size: 14px; }
+
+  .why-grid{ grid-template-columns: 1fr; }
+  .courses{ grid-template-columns: 1fr; }
+  .course-img img{ width: min(360px, 100%); }
 }
 
-@media (max-width: 980px) {
-  .hero {
-    grid-template-columns: 120px 1fr 120px;
-  }
-  .hero-char { width: 120px; }
-  .board-text h1 { font-size: 30px; }
-  .board-text p { font-size: 13px; }
+@media (max-width: 720px){
+  .container{ padding-left: 16px; padding-right: 16px; }
+
+  .hero-inner{ min-height: 380px; }
+
+  .hero-char{ width: 220px; }
+  .hero-char.left{ transform: translateX(-18px); }
+  .hero-char.right{ transform: translateX(18px); }
+
+  .board-text h1{ font-size: 28px; }
+  .board-text p{ font-size: 13px; }
+
+  .why h1,
+  .popular h1{ font-size: 40px; }
+
+  .why-icon{ width: min(260px, 100%); }
+  .why-icon img{ width: 100%; }
+
+  .course-img img{ width: min(320px, 100%); }
 }
 
-@media (max-width: 720px) {
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    text-align: center;
-  }
-  .hero-char.left,
-  .hero-char.right {
-    width: 120px;
-  }
-  .why-grid { grid-template-columns: 1fr; }
-  .courses { grid-template-columns: 1fr; }
+@media (max-width: 420px){
+  .board-text{ padding: 14px; }
+  .board-text h1{ font-size: 24px; }
+  .board-text p{ font-size: 12.5px; }
+
+  .why-card,
+  .course-card,
+  .course-img{ border-radius: 28px; }
+
+  .course-card h3{ font-size: 26px; }
+  .course-card li{ font-size: 16px; }
 }
