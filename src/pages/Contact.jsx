@@ -127,13 +127,12 @@ export default function Contact() {
           <h3>{t("contact.infoTitle")}</h3>
 
           <p>📍 Samarqand, O‘zbekiston</p>
-          <p>📞 +998 90 000 00 00</p>
-          <p>✉️ info@lumioedu.uz</p>
+          <p>📞 +998 93 331 33 48</p>
           <section className="social-section container">
             <h2>{t("contact.socialTitle")}</h2>
             <p className="social-subtitle">{t("contact.socialSubtitle")}</p>
 
-            <div className="social-grid">
+            <div className="social-grid-contact">
                 <a
                 href="https://t.me/LumioEdu"
                 target="_blank"
@@ -143,7 +142,7 @@ export default function Contact() {
                 <img
                     src={telegram_logo}
                     alt="Telegram"
-                    className="social-img"
+                    className="social-img-contact"
                 />
                 <span>Telegram</span>
                 </a>
@@ -157,7 +156,7 @@ export default function Contact() {
                 <img
                     src={INSTAGRAM_SVG_URL}
                     alt="Instagram"
-                    className="social-img"
+                    className="social-img-contact"
                 />
                 <span>Instagram</span>
                 </a>
@@ -171,7 +170,7 @@ export default function Contact() {
                 <img
                     src={youtube_logo}
                     alt="YouTube"
-                    className="social-img"
+                    className="social-img-contact"
                 />
                 <span>YouTube</span>
                 </a>
@@ -185,7 +184,7 @@ export default function Contact() {
                 <img
                     src={facebook_logo}
                     alt="Facebook"
-                    className="social-img"
+                    className="social-img-contact"
                 />
                 <span>Facebook</span>
                 </a>

@@ -68,7 +68,7 @@ export default function Courses() {
       <section className="courses-hero">
         <div className="courses-hero-inner container">
           <div>
-            <h1 className="courses-title">{t("courses.title")}</h1>
+            <h1 className="courses-title-courses">{t("courses.title")}</h1>
             <p className="courses-subtitle">{t("courses.subtitle")}</p>
           </div>
 

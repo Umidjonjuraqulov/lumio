@@ -2,163 +2,137 @@ import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../styles/teachers.css";
 
-import teacher1 from "../assets/teacher-2.jpg";
+// Teacher photos
+import teacher1 from "../assets/teacher-2.png";
 import teacher2 from "../assets/teacher-1.png";
 import teacher3 from "../assets/teacher-3.png";
+
+// Social icons (o'zingdagi iconlarni qo'y)
+import instagram from "../assets/Instagram_logo.png";
+import telegram from "../assets/Telegram_logo.png";
+import youtube from "../assets/youtube_logo.png";
+import facebook from "../assets/Facebook_log.png";
+// Agar yo'q bo'lsa, vaqtincha biror icon qo'yib tur
 
 export default function Teachers() {
   const { t } = useTranslation();
   const [query, setQuery] = useState("");
-  const [filter, setFilter] = useState("all");
 
   const teachers = useMemo(
     () => [
       {
-        id: "jasur",
-        name: "Aliyev Jasurbek",
-        role: t("teachers.items.jasur.role"),
-        subject: "math",
-        exp: "5+",
-        rating: "4.9",
+        id: "firuz",
+        name: t("team.items.firuz.name"),
+        role: t("team.items.firuz.role"),
+        desc: t("team.items.firuz.desc"),
         img: teacher1,
-        bio: t("teachers.items.jasur.bio"),
-        tags: [t("teachers.tags.preschool"), t("teachers.tags.olymp")],
+        socials: [
+          { id: "instagram", label: "Instagram", href: "https://instagram.com/", icon: instagram },
+          { id: "telegram", label: "Telegram", href: "https://t.me/", icon: telegram },
+          { id: "youtube", label: "YouTube", href: "https://youtube.com/", icon: youtube },
+          { id: "facebook", label: "Facebook", href: "https://facebook.com/", icon: facebook },
+        ],
       },
       {
-        id: "aziza",
-        name: "Aziza Karimova",
-        role: t("teachers.items.aziza.role"),
-        subject: "english",
-        exp: "4+",
-        rating: "4.8",
+        id: "bobonazar",
+        name: t("team.items.bobonazar.name"),
+        role: t("team.items.bobonazar.role"),
+        desc: t("team.items.bobonazar.desc"),
         img: teacher2,
-        bio: t("teachers.items.aziza.bio"),
-        tags: [t("teachers.tags.ielts"), t("teachers.tags.speaking")],
+        socials: [
+          { id: "instagram", label: "Instagram", href: "https://instagram.com/", icon: instagram },
+          { id: "telegram", label: "Telegram", href: "https://t.me/", icon: telegram },
+          { id: "youtube", label: "YouTube", href: "https://youtube.com/", icon: youtube },
+          { id: "facebook", label: "Facebook", href: "https://facebook.com/", icon: facebook },
+        ],
       },
       {
-        id: "bekzod",
-        name: "Bekzod Tursunov",
-        role: t("teachers.items.bekzod.role"),
-        subject: "prep",
-        exp: "6+",
-        rating: "4.9",
+        id: "umidjon",
+        name: t("team.items.umidjon.name"),
+        role: t("team.items.umidjon.role"),
+        desc: t("team.items.umidjon.desc"),
         img: teacher3,
-        bio: t("teachers.items.bekzod.bio"),
-        tags: [t("teachers.tags.exam"), t("teachers.tags.discipline")],
-      },
+        socials: [
+          { id: "instagram", label: "Instagram", href: "https://instagram.com/lumioedu", icon: instagram },
+          { id: "telegram", label: "Telegram", href: "https://t.me/LumioEdu", icon: telegram },
+          { id: "youtube", label: "YouTube", href: "https://youtube.com/@lumioedu", icon: youtube },
+          { id: "facebook", label: "Facebook", href: "https://facebook.com/lumioedu", icon: facebook },
+        ],
+      }
     ],
     [t]
   );
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return teachers.filter((x) => {
-      const byFilter = filter === "all" || x.subject === filter;
-      const byQuery =
-        q.length === 0 ||
+    if (!q) return teachers;
+    return teachers.filter(
+      (x) =>
         x.name.toLowerCase().includes(q) ||
-        x.bio.toLowerCase().includes(q);
-      return byFilter && byQuery;
-    });
-  }, [teachers, query, filter]);
+        x.role.toLowerCase().includes(q) ||
+        x.desc.toLowerCase().includes(q)
+    );
+  }, [teachers, query]);
 
   return (
-    <main className="teachers-page">
-      {/* HERO */}
-      <section className="teachers-hero">
-        <div className="container teachers-hero-inner">
-          <div>
-            <h1 className="teachers-title">{t("teachers.title")}</h1>
-            <p className="teachers-subtitle">{t("teachers.subtitle")}</p>
-          </div>
+    <main className="team-page">
+      <section className="team-hero">
+        <div className="container">
+          <h1 className="team-title">{t("team.title")}</h1>
+          <p className="team-subtitle">{t("team.subtitle")}</p>
 
-          <div className="teachers-controls">
+          <div className="team-controls">
             <input
-              className="teachers-search"
+              className="team-search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder={t("teachers.search")}
+              placeholder={t("team.search")}
             />
-
-            <div className="teachers-filter">
-              <button
-                type="button"
-                className={`chip ${filter === "all" ? "active" : ""}`}
-                onClick={() => setFilter("all")}
-              >
-                {t("teachers.filters.all")}
-              </button>
-              <button
-                type="button"
-                className={`chip ${filter === "math" ? "active" : ""}`}
-                onClick={() => setFilter("math")}
-              >
-                {t("teachers.filters.math")}
-              </button>
-              <button
-                type="button"
-                className={`chip ${filter === "english" ? "active" : ""}`}
-                onClick={() => setFilter("english")}
-              >
-                {t("teachers.filters.english")}
-              </button>
-              <button
-                type="button"
-                className={`chip ${filter === "prep" ? "active" : ""}`}
-                onClick={() => setFilter("prep")}
-              >
-                {t("teachers.filters.prep")}
-              </button>
-            </div>
           </div>
         </div>
       </section>
 
-      {/* LIST */}
-      <section className="container teachers-list">
-        <div className="teachers-grid">
+      <section className="container">
+        <div className="team-grid">
           {filtered.map((x) => (
-            <article key={x.id} className="teacher-card">
-              <div className="teacher-top">
-                <div className="teacher-avatar">
-                  <img src={x.img} alt={x.name} />
-                </div>
+            <article key={x.id} className="team-card">
+              <div className="team-photo">
+                <img src={x.img} alt={x.name} />
+              </div>
 
-                <div className="teacher-head">
-                  <h3>{x.name}</h3>
-                  <p className="teacher-role">{x.role}</p>
+              <div className="team-body">
+                <h3 className="team-name">{x.name}</h3>
+                <div className="team-role">{x.role}</div>
+                <p className="team-desc">{x.desc}</p>
 
-                  <div className="teacher-stats">
-                    <span className="stat">⭐ {x.rating}</span>
-                    <span className="stat">{t("teachers.exp")}: {x.exp} {t("teachers.years")}</span>
+                <div className="social-block">
+                  <div className="social-title">{t("team.socialTitle")}</div>
+
+                  <div className="social-grid">
+                    {x.socials.map((s) => (
+                      <a
+                        key={s.id}
+                        className="social-btn"
+                        href={s.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={s.label}
+                        title={s.label}
+                      >
+                        <img className="social-img" src={s.icon} alt={s.label} />
+                      </a>
+                    ))}
                   </div>
                 </div>
-              </div>
-
-              <p className="teacher-bio">{x.bio}</p>
-
-              <div className="teacher-tags">
-                {x.tags.map((tag, idx) => (
-                  <span key={idx} className="tag">{tag}</span>
-                ))}
-              </div>
-
-              <div className="teacher-actions">
-                <a className="btn-primary" href="/contact">
-                  {t("teachers.cta.contact")}
-                </a>
-                <a className="btn-ghost" href="/courses">
-                  {t("teachers.cta.courses")}
-                </a>
               </div>
             </article>
           ))}
         </div>
 
         {filtered.length === 0 && (
-          <div className="empty-state">
-            <h3>{t("teachers.empty.title")}</h3>
-            <p>{t("teachers.empty.desc")}</p>
+          <div className="team-empty">
+            <h3>{t("team.empty.title")}</h3>
+            <p>{t("team.empty.desc")}</p>
           </div>
         )}
       </section>

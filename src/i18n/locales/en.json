@@ -49,18 +49,67 @@
     }
   },
   "contact": {
-    "title": "Contact",
-    "subtitle": "Have questions? Get in touch with us. We’ll reply as soon as possible.",
+    "title": "Contacts",
+    "subtitle": "Have questions? Contact us and we’ll get back to you shortly.",
+
     "infoTitle": "Contact information",
-    "note": "Working hours: Monday–Saturday (09:00–20:00). Sunday is a day off.",
-    "success": "Your message has been sent! We will get back to you soon.",
-  "failed": "An error occurred, please try again.",
-  "form": {
-    "sending": "Sending...",
-    "phonePlaceholder": "+998 90 123 45 67",
-    "telegramPlaceholder": "@username (optional)"
+
+    "socialTitle": "Social media",
+    "socialSubtitle": "Follow us on social networks",
+
+    "note": "Working hours: Mon–Sat (09:00–20:00). Sunday — day off.",
+
+    "formTitle": "Send a message",
+
+    "form": {
+      "name": "Your name",
+      "email": "Email address",
+      "phonePlaceholder": "+998 90 123 45 67",
+      "telegramPlaceholder": "@username (optional)",
+      "message": "Write your message...",
+      "send": "Send",
+      "sending": "Sending..."
+    },
+
+    "success": "Your message was sent successfully!",
+    "failed": "Something went wrong. Please try again.",
+
+    "errors": {
+      "name": "Please enter your name.",
+      "email": "Please enter your email.",
+      "emailInvalid": "Please enter a valid email.",
+      "phone": "Please enter your phone number.",
+      "phoneInvalid": "Invalid phone format.",
+      "message": "Please write a message.",
+      "messageShort": "Message must be at least 10 characters long."
+    }
+  },
+  "team": {
+    "title": "Our Team",
+    "subtitle": "A team of experienced specialists and mentors.",
+    "search": "Search by name, role, or text...",
+    "socialTitle": "Social media",
+    "empty": {
+      "title": "No results found",
+      "desc": "Try searching with different words."
+    },
+    "items": {
+      "firuz": {
+        "name": "Aliyev Jasurbek",
+        "role": "CEO & CO FOUNDER",
+        "desc": "A visionary leader with 8+ years of experience in AI and business strategy. Focused on structured planning and measurable outcomes."
+      },
+      "bobonazar": {
+        "name": "Umidjon Juraqulov",
+        "role": "Backend Developer & Teacher",
+        "desc": "Graduate of Samarkand State Pedagogical Institute, Backend developer with over 2 years of professional experience. Specializes in designing complex systems, optimizing performance, and developing technical solutions."
+      },
+      "umidjon": {
+        "name": "Umidjon Juraqulov",
+        "role": "Backend Developer",
+        "desc": "Specialist in scalable backend systems and cloud architecture. Works with APIs, databases, and integrations."
+      }
+    }
   }
 }
-  
 
-}

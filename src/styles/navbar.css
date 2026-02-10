@@ -304,3 +304,106 @@ html, body {
     display: none;
   }
 }
+
+/* Burger button (default: hidden desktopda) */
+.nav-burger{
+  display:none;
+  border:none;
+  background: rgba(255, 255, 255, .75);
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  cursor:pointer;
+  box-shadow: 0 8px 14px rgba(0,0,0,.06);
+  position: relative;
+  padding: 0;
+}
+
+/* 3ta chiziq */
+.nav-burger span{
+  position:absolute;
+  left: 11px;
+  right: 11px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--text);
+  transition: transform .18s ease, top .18s ease, opacity .18s ease;
+}
+
+.nav-burger span:nth-child(1){ top: 14px; }
+.nav-burger span:nth-child(2){ top: 21px; }
+.nav-burger span:nth-child(3){ top: 28px; }
+
+/* Open bo'lsa X ga aylanadi */
+.nav-burger.open span:nth-child(1){ top: 21px; transform: rotate(45deg); }
+.nav-burger.open span:nth-child(2){ opacity: 0; }
+.nav-burger.open span:nth-child(3){ top: 21px; transform: rotate(-45deg); }
+
+/* Dark mode burger */
+:root[data-theme="dark"] .nav-burger{
+  background: rgba(255,255,255,.08);
+  box-shadow: none;
+}
+
+/* Responsive: mobil */
+@media (max-width: 720px){
+  .nav-inner{
+    flex-wrap: wrap;
+  }
+
+  .nav-burger{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-left: auto; /* branddan keyin o'ngga */
+  }
+
+  /* nav-actions joylashuvi */
+  .nav-actions{
+    margin-left: 8px;
+  }
+
+  .nav-links{
+    display:none;
+    width: 100%;
+    margin-left: 0;
+    padding: 10px 0 4px;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .nav-links.open{
+    display:flex;
+  }
+
+  .nav-links a{
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
+@media (max-width: 720px){
+  .nav-inner{
+    flex-wrap: wrap;
+  }
+
+  /* chapda brand */
+  .brand{ order: 1; }
+
+  /* avval actions, keyin burger (burger eng o‘ngda bo‘ladi) */
+  .nav-actions{
+    order: 2;
+    margin-left: auto;  /* actions o‘ng tomonga ketadi */
+  }
+
+  .nav-burger{
+    order: 3;           /* actionsdan keyin */
+    margin-left: 10px;  /* actions bilan orasiga */
+  }
+
+  /* ochiladigan menyu pastga tushsin */
+  .nav-links{
+    order: 4;
+    width: 100%;
+  }
+}

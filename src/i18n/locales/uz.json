@@ -47,18 +47,68 @@
   },
   "contact": {
     "title": "Kontaktlar",
-    "subtitle": "Savollaringiz bormi? Biz bilan bog‘laning. Tez orada javob beramiz.",
+    "subtitle": "Savollaringiz bormi? Biz bilan bog'laning. Tez orada javob beramiz.",
+
     "infoTitle": "Aloqa ma’lumotlari",
+
+    "socialTitle": "Ijtimoiy tarmoqlar",
+    "socialSubtitle": "Bizni ijtimoiy tarmoqlarda kuzatib boring",
+
     "note": "Ish vaqti: Dushanba–Shanba (09:00–20:00). Yakshanba — dam olish kuni.",
+
     "formTitle": "Xabar yuborish",
-  
-    "success": "Xabaringiz yuborildi! Tez orada bog‘lanamiz.",
-    "failed": "Xatolik yuz berdi, qayta urinib ko‘ring.",
+
     "form": {
-      "sending": "Yuborilmoqda...",
+      "name": "Ismingiz",
+      "email": "Email manzil",
       "phonePlaceholder": "+998 90 123 45 67",
-      "telegramPlaceholder": "@username (ixtiyoriy)"
+      "telegramPlaceholder": "@username (ixtiyoriy)",
+      "message": "Xabaringizni yozing...",
+      "send": "Yuborish",
+      "sending": "Yuborilmoqda..."
+    },
+
+    "success": "Xabaringiz muvaffaqiyatli yuborildi!",
+    "failed": "Xatolik yuz berdi. Iltimos, qayta urinib ko‘ring.",
+
+    "errors": {
+      "name": "Ismni kiriting.",
+      "email": "Emailni kiriting.",
+      "emailInvalid": "Yaroqli email kiriting.",
+      "phone": "Telefon raqamini kiriting.",
+      "phoneInvalid": "Telefon noto‘g‘ri formatda.",
+      "message": "Xabarni yozing.",
+      "messageShort": "Xabar kamida 10 ta belgidan iborat bo‘lishi kerak."
+    }
+  },
+  "team": {
+    "title": "Bizning jamoa",
+    "subtitle": "Tajribali mutaxassislar va mentorlar jamoasi.",
+    "search": "Ism, lavozim yoki matn bo‘yicha qidirish...",
+    "socialTitle": "Ijtimoiy tarmoqlar",
+    "empty": {
+      "title": "Natija topilmadi",
+      "desc": "Boshqa so‘z bilan qidirib ko‘ring."
+    },
+    "items": {
+      "firuz": {
+        "name": "Aliyev Jasurbek",
+        "role": "General direktor va Matematika o'qituvchi",
+        "desc": "AI va biznes strategiya bo‘yicha 8+ yillik tajribaga ega. Loyihalarni tizimli rejalashtiradi va natijaga yo‘naltiradi."
+      },
+      "bobonazar": {
+        "name": "Umidjon Juraqulov",
+        "role": "Backend dasturchi & O'qituvchi",
+        "desc": "Samarqand davlat pedagogika instituti bitiruvchisi, 2+ yillik professional tajribaga ega Backend dasturchi. Murakkab tizimlarni loyihalash, optimallashtirish va texnik yechimlarni ishlab chiqishga ixtisoslashgan."
+      },
+      "umidjon": {
+        "name": "Tursunpo'latova Ozoda",
+        "role": "Backend dasturchi",
+        "desc": "Masshtablanadigan backend tizimlar va cloud arxitektura bo‘yicha mutaxassis. API, ma’lumotlar bazasi va integratsiyalar bilan ishlaydi."
+      }
     }
   }
 }
+
+
 

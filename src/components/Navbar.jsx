@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitch from "./LanguageSwitch";
@@ -7,20 +8,48 @@ import "../styles/navbar.css";
 
 export default function Navbar({ theme, setTheme }) {
   const { t } = useTranslation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const closeMenu = () => setMenuOpen(false);
 
   return (
     <header className="nav-wrap">
       <div className="nav-inner">
-        <div className="brand" to="/">
+        {/* Brand */}
+        <div className="brand" to="/" onClick={closeMenu}>
           <img src={logo} alt="Lumio EDU" className="brand-logo" />
-          <span className="brand-text">Lumio <b>EDU</b></span>
+          <span className="brand-text">
+            Lumio <b>EDU</b>
+          </span>
         </div>
 
-        <nav className="nav-links">
-          <a href="/">{t("nav.home")}</a>
-          <a href="/teachers">{t("nav.teachers")}</a>
-          <Link to="/courses">{t("nav.courses")}</Link>
-          <a href="/contact">{t("nav.contact")}</a>
+        {/* Burger (mobil) */}
+        <button
+          className={`nav-burger ${menuOpen ? "open" : ""}`}
+          type="button"
+          aria-label="Menu"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((v) => !v)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+
+        {/* Links */}
+        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+          <NavLink to="/" onClick={closeMenu}>
+            {t("nav.home")}
+          </NavLink>
+          <NavLink to="/teachers" onClick={closeMenu}>
+            {t("nav.teachers")}
+          </NavLink>
+          <NavLink to="/courses" onClick={closeMenu}>
+            {t("nav.courses")}
+          </NavLink>
+          <NavLink to="/contact" onClick={closeMenu}>
+            {t("nav.contact")}
+          </NavLink>
         </nav>
 
         <div className="nav-actions">
