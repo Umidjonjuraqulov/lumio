@@ -45,7 +45,6 @@ export default function Footer() {
           <h4>Aloqa</h4>
           <p>📍 Samarqand, O‘zbekiston</p>
           <p>📞 +998 93 331 33 48</p>
-          <p>✉️ info@lumioedu.uz</p>
         </div>
       </div>
 
