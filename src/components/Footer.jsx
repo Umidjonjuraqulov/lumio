@@ -14,42 +14,41 @@ export default function Footer() {
             Lumio <span>EDU</span>
           </h3>
           <p>
-            Zamonaviy onlayn ta’lim platformasi.  
-            Bilim – kelajak poydevori.
+            {t("footer.tagline")}
           </p>
         </div>
 
         {/* Navigation */}
         <div className="footer-col">
-          <h4>Menyu</h4>
+          <h4>{t("footer.menu")}</h4>
           <ul>
-            <li><a href="/">Bosh sahifa</a></li>
-            <li><a href="/teachers">O‘qituvchilar</a></li>
-            <li><a href="/courses">Kurslar</a></li>
-            <li><a href="/contact">Bog‘lanish</a></li>
+            <li><a href="/">{t("footer.nav.home")}</a></li>
+            <li><a href="/teachers">{t("footer.nav.teachers")}</a></li>
+            <li><a href="/courses">{t("footer.nav.courses")}</a></li>
+            <li><a href="/contact">{t("footer.nav.contact")}</a></li>
           </ul>
         </div>
 
         {/* Courses */}
         <div className="footer-col">
-          <h4>Kurslar</h4>
+          <h4>{t("footer.courses_title")}</h4>
           <ul>
-            <li>Matematika</li>
-            <li>Ingliz tili</li>
-            <li>Prezident maktabiga tayyorlov</li>
+            <li>{t("footer.courses.math")}</li>
+            <li>{t("footer.courses.english")}</li>
+            <li>{t("footer.courses.presidential")}</li>
           </ul>
         </div>
 
         {/* Contact */}
         <div className="footer-col">
-          <h4>Aloqa</h4>
-          <p>📍 Samarqand, O‘zbekiston</p>
-          <p>📞 +998 93 331 33 48</p>
+          <h4>{t("footer.contact_title")}</h4>
+          <p>{t("footer.address")}</p>
+          <p>{t("footer.phone")}</p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} Lumio EDU. Barcha huquqlar himoyalangan.
+        © {new Date().getFullYear()} Lumio EDU. {t("footer.rights")}
       </div>
     </footer>
   );

@@ -110,6 +110,28 @@
         "desc": "Student of Samarkand State Pedagogical Institute with over 2 years of practical teaching experience. Skilled in applying psychological approaches and effective teaching methodologies when working with children."
       }
     }
+  },
+  "footer": {
+    "tagline": "A modern online education platform. Knowledge is the foundation of the future.",
+    "menu": "Menu",
+    "courses_title": "Courses",
+    "contact_title": "Contact",
+    "address": "📍 Samarkand, Uzbekistan",
+    "phone": "📞 +998 93 331 33 48",
+    "rights": "All rights reserved.",
+
+    "nav": {
+      "home": "Home",
+      "teachers": "Teachers",
+      "courses": "Courses",
+      "contact": "Contact"
+    },
+
+    "courses": {
+      "math": "Mathematics",
+      "english": "English",
+      "presidential": "Preparation for Presidential School"
+    }
   }
 }
 

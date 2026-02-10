@@ -107,8 +107,32 @@
         "desc": "Samarqand davlat pedagogika instituti talabasi, 2 yildan ortiq amaliy pedagogik tajribaga ega o‘qituvchi. Bolalar bilan ishlashda psixologik yondashuvlar va samarali ta’lim metodikalarini qo‘llash bo‘yicha malakaga ega."
       }
     }
+  },
+  "footer": {
+    "tagline": "Zamonaviy onlayn ta’lim platformasi. Bilim – kelajak poydevori.",
+    "menu": "Menyu",
+    "courses_title": "Kurslar",
+    "contact_title": "Aloqa",
+    "address": "📍 Samarqand, O‘zbekiston",
+    "phone": "📞 +998 93 331 33 48",
+    "rights": "Barcha huquqlar himoyalangan.",
+
+    "nav": {
+      "home": "Bosh sahifa",
+      "teachers": "O‘qituvchilar",
+      "courses": "Kurslar",
+      "contact": "Bog‘lanish"
+    },
+
+    "courses": {
+      "math": "Matematika",
+      "english": "Ingliz tili",
+      "presidential": "Prezident maktabiga tayyorlov"
+    }
   }
 }
+
+
 
 
 
