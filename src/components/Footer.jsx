@@ -23,10 +23,10 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Menyu</h4>
           <ul>
-            <li><a href="#home">Bosh sahifa</a></li>
-            <li><a href="#teachers">O‘qituvchilar</a></li>
-            <li><a href="#courses">Kurslar</a></li>
-            <li><a href="#contact">Bog‘lanish</a></li>
+            <li><a href="/">Bosh sahifa</a></li>
+            <li><a href="/teachers">O‘qituvchilar</a></li>
+            <li><a href="/courses">Kurslar</a></li>
+            <li><a href="/contact">Bog‘lanish</a></li>
           </ul>
         </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
         <div className="footer-col">
           <h4>Aloqa</h4>
           <p>📍 Samarqand, O‘zbekiston</p>
-          <p>📞 +998 90 000 00 00</p>
+          <p>📞 +998 93 331 33 48</p>
           <p>✉️ info@lumioedu.uz</p>
         </div>
       </div>
