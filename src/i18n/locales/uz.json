@@ -93,18 +93,18 @@
     "items": {
       "firuz": {
         "name": "Aliyev Jasurbek",
-        "role": "General direktor va Matematika o'qituvchi",
-        "desc": "AI va biznes strategiya bo‘yicha 8+ yillik tajribaga ega. Loyihalarni tizimli rejalashtiradi va natijaga yo‘naltiradi."
+        "role": "Matematika O'qituvchi",
+        "desc": "Samarqand davlat pedagogika instituti bitiruvchisi, 3 yillik professional tajribasiga ega o‘qituvchi. O‘quvchilarning individual qobiliyatlarini rivojlantirish bo‘yicha amaliy ko‘nikmalarga ega. IELTS 6 xalqaro sertifikat sohibi."
       },
       "bobonazar": {
         "name": "Umidjon Juraqulov",
-        "role": "Backend dasturchi & O'qituvchi",
+        "role": "Backend dasturchi & Matematika O'qituvchi",
         "desc": "Samarqand davlat pedagogika instituti bitiruvchisi, 2+ yillik professional tajribaga ega Backend dasturchi. Murakkab tizimlarni loyihalash, optimallashtirish va texnik yechimlarni ishlab chiqishga ixtisoslashgan."
       },
       "umidjon": {
         "name": "Tursunpo'latova Ozoda",
-        "role": "Backend dasturchi",
-        "desc": "Masshtablanadigan backend tizimlar va cloud arxitektura bo‘yicha mutaxassis. API, ma’lumotlar bazasi va integratsiyalar bilan ishlaydi."
+        "role": "Boshlangich Ta'lim O'qituvchi",
+        "desc": "Samarqand davlat pedagogika instituti talabasi, 2 yildan ortiq amaliy pedagogik tajribaga ega o‘qituvchi. Bolalar bilan ishlashda psixologik yondashuvlar va samarali ta’lim metodikalarini qo‘llash bo‘yicha malakaga ega."
       }
     }
   }

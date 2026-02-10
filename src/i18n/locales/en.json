@@ -96,8 +96,8 @@
     "items": {
       "firuz": {
         "name": "Aliyev Jasurbek",
-        "role": "CEO & CO FOUNDER",
-        "desc": "A visionary leader with 8+ years of experience in AI and business strategy. Focused on structured planning and measurable outcomes."
+        "role": "Mathematics Teacher",
+        "desc": "Graduate of Samarkand State Pedagogical Institute with 3 years of professional teaching experience. Possesses practical skills in developing students’ individual abilities and is a holder of an IELTS 6 international certificate."
       },
       "bobonazar": {
         "name": "Umidjon Juraqulov",
@@ -105,9 +105,9 @@
         "desc": "Graduate of Samarkand State Pedagogical Institute, Backend developer with over 2 years of professional experience. Specializes in designing complex systems, optimizing performance, and developing technical solutions."
       },
       "umidjon": {
-        "name": "Umidjon Juraqulov",
-        "role": "Backend Developer",
-        "desc": "Specialist in scalable backend systems and cloud architecture. Works with APIs, databases, and integrations."
+        "name": "Tursunpo'latova Ozoda",
+        "role": "Primary School Teacher",
+        "desc": "Student of Samarkand State Pedagogical Institute with over 2 years of practical teaching experience. Skilled in applying psychological approaches and effective teaching methodologies when working with children."
       }
     }
   }
