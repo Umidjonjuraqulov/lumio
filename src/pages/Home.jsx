@@ -95,7 +95,7 @@ export default function Home() {
                 <b>{t("popular.schedule")}:</b> 5 kun onlayn dars
               </li>
             </ul>
-            <a className="course-btn" href="#courses">
+            <a className="course-btn" href="/courses">
                 Learn More
             </a>
           </article>
@@ -121,7 +121,7 @@ export default function Home() {
                 <b>{t("popular.schedule")}:</b> 5 kun onlayn dars
               </li>
             </ul>
-            <a className="course-btn" href="#courses">
+            <a className="course-btn" href="/courses">
                 Learn More
             </a>
           </article>
@@ -146,7 +146,7 @@ export default function Home() {
                 <b>{t("popular.schedule")}:</b> 5 kun onlayn dars
               </li>
             </ul>
-            <a className="course-btn" href="#courses">
+            <a className="course-btn" href="/courses">
                 Learn More
             </a>
           </article>
